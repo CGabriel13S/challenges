@@ -16,8 +16,26 @@ body{
 
 .container-grid{
     display: grid;
-    grid-template-columns: 25rem;
+    grid-template-columns: 28rem;
     background-color: white;
+}
+
+main{
+    padding: 2.5rem 2.5rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo{
+    font-size: 3.2ch;
+}
+
+.texto{
+    padding-top: 1.5rem;
+    width: 30ch;
+    font-size: 1.2rem;
+    padding-left: 1.5rem;
+    color: hsl(220, 15%, 55%);
 }
 
 .attribution{
