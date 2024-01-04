@@ -43,8 +43,12 @@ main{
 .attribution{
     font-size: 1rem;
     text-align: center;
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .attribution a{
-    color: hsl(228, 45%, 44%)
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: bold;
 }
