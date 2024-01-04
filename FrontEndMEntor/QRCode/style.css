@@ -1,3 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: grid;
+    place-content: center center;
+    min-height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.qrcode{
+    max-width: 100%;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-columns: 25rem;
+    background-color: white;
+}
+
 .attribution{
     font-size: 1rem;
     text-align: center;
