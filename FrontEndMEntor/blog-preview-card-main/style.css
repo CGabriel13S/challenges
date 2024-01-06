@@ -3,6 +3,31 @@
     padding: 0rem;
 }
 
+body{
+  display: grid;
+  grid-template-columns: 25rem;
+  min-height: 100vh;
+  place-content: center center;
+  background-color: hsl(47, 88%, 63%);
+}
+
+main{
+  display: grid;
+  background-color: white;
+  padding: 2rem;
+}
+
+.autor{
+  display: flex;
+  align-items: center;
+}
+
+.ilustracao{
+  max-width: 100%;
+}
+
+
+
 .attribution {
     font-size: 11px;
     text-align: center;
