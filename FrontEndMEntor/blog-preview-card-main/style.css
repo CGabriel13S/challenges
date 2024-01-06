@@ -17,6 +17,8 @@ main{
   background-color: white;
   padding: 2rem;
   border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem black;
+  border: 0.12rem solid black;
 }
 
 .ilustracao{
