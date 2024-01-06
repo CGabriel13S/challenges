@@ -16,14 +16,22 @@ main{
   display: grid;
   background-color: white;
   padding: 2rem;
+  border-radius: 1rem;
+}
+
+.ilustracao{
+  max-width: 100%;
+  border-radius: 1rem;
 }
 
 .learning{
   background-color: hsl(47, 88%, 63%);
   max-width: 5rem;
-  padding: 0.8rem;
+  padding: 0.7rem;
   font-weight: 800;
   margin: 1rem 0rem;
+  border-radius: 0.5rem;
+  text-align: center;
 }
 
 .data-de-publicacao{
@@ -42,12 +50,6 @@ main{
   display: flex;
   align-items: center;
 }
-
-.ilustracao{
-  max-width: 100%;
-}
-
-
 
 .attribution {
     font-size: 11px;
