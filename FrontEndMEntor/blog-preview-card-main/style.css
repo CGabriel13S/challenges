@@ -40,22 +40,35 @@ main{
 
 .titulo{
   margin: 1rem 0rem;
+  font-weight: 800;
 }
 
 .texto{
   margin-bottom: 1.5rem;
+  color: hsl(0, 0%, 50%);
+  line-height: 1.5rem;
 }
 
 .autor{
   display: flex;
   align-items: center;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.avatar{
+  width: 2.5rem;
 }
 
 .attribution {
-    font-size: 11px;
+    font-size: 1rem;
     text-align: center;
+    margin-top: 1rem;
   }
 
   .attribution a {
     color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    font-weight: 800;
   }
