@@ -9,12 +9,33 @@ body{
   min-height: 100vh;
   place-content: center center;
   background-color: hsl(47, 88%, 63%);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 main{
   display: grid;
   background-color: white;
   padding: 2rem;
+}
+
+.learning{
+  background-color: hsl(47, 88%, 63%);
+  max-width: 5rem;
+  padding: 0.8rem;
+  font-weight: 800;
+  margin: 1rem 0rem;
+}
+
+.data-de-publicacao{
+  margin-top: 1rem;
+}
+
+.titulo{
+  margin: 1rem 0rem;
+}
+
+.texto{
+  margin-bottom: 1.5rem;
 }
 
 .autor{
