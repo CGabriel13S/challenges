@@ -17,32 +17,54 @@ main {
 .results {
     display: grid;
     gap: 2rem;
-    padding: 5rem;
-    background-color: rgb(113, 113, 185);
+    padding: 2rem 5rem;
     text-align: center;
+    border-radius: 2rem;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
 
+.titulo-results{
+    color: hsl(241, 100%, 89%);
 }
 
 .points {
-    background-color: blue;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     border-radius: 100%;
-    max-width: 3rem;
-    padding: 2rem;
+    max-width: 5rem;
+    max-height: 6rem;
+    padding: 3rem;
     text-align: center;
     margin: 0 auto;
 }
 
-.great {}
+.part-one-points{
+    font-size: 5rem;
+    font-weight: 700;
+    color: white;
+
+}
+
+.part-two-points{
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(241, 100%, 89%)
+}
+
+.great {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
 
 .text {
     max-width: 12rem;
+    color: hsl(241, 100%, 89%);
 }
 
 .summary {
     display: grid;
     padding: 7rem;
     gap: 2rem;
-    background-color: green;
 }
 
 .description-points {
