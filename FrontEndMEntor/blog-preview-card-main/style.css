@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
 *{
     margin: 0rem;
     padding: 0rem;
@@ -9,7 +11,7 @@ body{
   min-height: 100vh;
   place-content: center center;
   background-color: hsl(47, 88%, 63%);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Figtree;
 }
 
 main{
