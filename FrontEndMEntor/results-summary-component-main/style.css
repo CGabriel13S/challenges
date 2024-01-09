@@ -1,7 +1,56 @@
-*{
+* {
     margin: 0rem;
     padding: 0rem;
 }
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-content: center center;
+}
+
+main {
+    display: flex;
+    place-content: center center;
+}
+
+.results {
+    display: grid;
+    gap: 2rem;
+    padding: 5rem;
+    background-color: rgb(113, 113, 185);
+    text-align: center;
+
+}
+
+.points {
+    background-color: blue;
+    border-radius: 100%;
+    max-width: 3rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.great {}
+
+.text {
+    max-width: 12rem;
+}
+
+.summary {
+    display: grid;
+    padding: 7rem;
+    gap: 2rem;
+    background-color: green;
+}
+
+.description-points {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
 
 .attribution {
     font-size: 11px;
