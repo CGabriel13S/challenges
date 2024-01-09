@@ -38,7 +38,7 @@ main{
 .texto{
     margin-top: 2rem;
     font-size: 1.2rem;
-    color: hsl(220, 15%, 55%);
+    color: hsl(219, 15%, 55%);
     padding: 0rem 2rem;
     margin-bottom: 1rem;
 }
@@ -54,4 +54,31 @@ main{
     color: hsl(228, 45%, 44%);
     text-decoration: none;
     font-weight: bold;
+}
+
+@media(max-width: 400px){
+    .container-grid{
+        grid-template-columns: 18rem;
+        padding: 1.4rem 0rem;
+    }
+    
+    .qrcode{
+        max-width: 85%;
+        margin-left: 1.4rem;
+    }
+
+    .titulo{
+        font-size: 1.1rem;
+        margin-top: 1rem;
+    }
+    
+    .texto{
+        font-size: 0.8rem;
+        margin-top: 1.2rem;
+        margin-bottom: 0rem;
+    }
+
+    .attribution{
+        font-size: 0.8rem;
+    }
 }
