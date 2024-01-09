@@ -12,6 +12,7 @@ body {
 main {
     display: flex;
     place-content: center center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .results {
@@ -57,7 +58,7 @@ main {
 }
 
 .text {
-    max-width: 12rem;
+    max-width: 14rem;
     color: hsl(241, 100%, 89%);
 }
 
