@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
 * {
     margin: 0rem;
     padding: 0rem;
@@ -7,12 +9,12 @@ body {
     display: grid;
     min-height: 100vh;
     place-content: center center;
+    font-family: Hanken Grotesk;
 }
 
 main {
     display: flex;
     place-content: center center;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .results {
@@ -36,6 +38,8 @@ main {
     padding: 3rem;
     text-align: center;
     margin: 0 auto;
+    padding-top:2rem;
+    padding-bottom: 4rem;
 }
 
 .part-one-points{
@@ -60,6 +64,7 @@ main {
 .text {
     max-width: 14rem;
     color: hsl(241, 100%, 89%);
+    line-height: 1.3rem;
 }
 
 .summary {
@@ -145,8 +150,7 @@ main {
 }
 
 footer {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
+    font-size: 1.1em;
     text-align: center;
     font-weight: 700;
     padding-top: 3rem;
