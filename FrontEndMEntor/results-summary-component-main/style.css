@@ -70,16 +70,18 @@ main {
 
 .description-points {
     display: grid;
-    grid-template-columns: 1rem 18rem;
-    align-items: center;
+    grid-template-columns: 18rem;
     gap: 1rem;
     font-weight: 700;
 }
 
 .reaction{
+    display: flex;
     background-color: hsla(0, 100%, 67%, 0.1);
     padding: 1rem;
     border-radius: 1rem;
+    align-items: center;
+    gap: 1rem;
 }
 
 .reac{
@@ -120,7 +122,7 @@ main {
 }
 
 .part-one{
-    padding-left: 7rem;
+    padding-left: 5rem;
     font-weight: 700;
 }
 
