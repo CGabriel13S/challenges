@@ -66,6 +66,9 @@ main {
     display: grid;
     padding: 2.2rem;
     gap: 2rem;
+    box-shadow: 0.1rem 0.3rem 0.5rem rgb(214, 207, 207);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 .description-points {
