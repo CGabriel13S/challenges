@@ -189,12 +189,20 @@ footer a {
         box-shadow: 0 0 0;
     }
 
+    .description-points{
+        grid-template-columns: 21rem;
+    }
+    
+    .part-one{
+        padding-left: 8rem;
+    }
+
     .button{
         padding: 1rem;
     }
 
     footer{
-        padding-top: 0;
+        padding-top: 2rem;
         padding-bottom: 3rem;
     }
 }
