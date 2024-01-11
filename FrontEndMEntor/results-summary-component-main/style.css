@@ -164,6 +164,7 @@ footer a {
     main{
         display: grid;
         grid-template-columns: 1fr;
+        box-shadow: 0 0 0;
     }
 
     .results{
@@ -186,7 +187,6 @@ footer a {
 
     .summary{
         border-radius: 0;
-        box-shadow: 0 0 0;
     }
 
     .description-points{
