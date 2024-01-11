@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 
 body{
@@ -12,29 +12,27 @@ body{
     background-color: hsl(212, 45%, 89%);
 }
 
-.qrcode{
-    max-width: 85%;
-    border-radius: 1rem;
-    margin-left: 2.1rem;
-}
-
-.container-grid{
-    display: grid;
-    grid-template-columns: 25rem;
-    background-color: white;
-    padding: 2rem 0rem;
+.qrcode {
+    max-width: 100%;
     border-radius: 1rem;
 }
 
 main{
+    display: grid;
+    grid-template-columns: 25rem;
+    background-color: white;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+}
+
+.content{
     text-align: center;
     font-family: Outfit;
 }
 
 .titulo{
     margin-top: 2rem;
-    font-size: 1.7rem;
-    padding: 0rem 2rem;
+    font-size: 1.9rem;
 }
 
 .texto{
@@ -45,21 +43,21 @@ main{
     margin-bottom: 1rem;
 }
 
-.attribution{
+footer{
     font-size: 1rem;
     text-align: center;
     margin: 1rem;
     font-family: Outfit;
 }
 
-.attribution a{
+footer a{
     color: hsl(228, 45%, 44%);
     text-decoration: none;
     font-weight: bold;
 }
 
 @media(max-width: 400px){
-    .container-grid{
+    main{
         grid-template-columns: 18rem;
         padding: 1.4rem 0rem;
     }
@@ -70,8 +68,9 @@ main{
     }
 
     .titulo{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin-top: 1rem;
+        padding: 0 2rem;
     }
     
     .texto{
@@ -80,7 +79,7 @@ main{
         margin-bottom: 0rem;
     }
 
-    .attribution{
+    footer{
         font-size: 0.8rem;
     }
 }
