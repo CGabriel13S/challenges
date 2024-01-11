@@ -15,6 +15,8 @@ body {
 main {
     display: flex;
     place-content: center center;
+    box-shadow: 0.1rem 0.3rem 0.5rem rgb(214, 207, 207);
+    border-radius: 2rem;
 }
 
 .results {
@@ -71,9 +73,6 @@ main {
     display: grid;
     padding: 2.2rem;
     gap: 2rem;
-    box-shadow: 0.1rem 0.3rem 0.5rem rgb(214, 207, 207);
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
 }
 
 .description-points {
@@ -159,4 +158,43 @@ footer {
 footer a {
     color: hsl(228, 45%, 44%);
     text-decoration: none;
+}
+
+@media (max-width: 400px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .results{
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+        gap: 1.2rem;
+    }
+
+    .points{
+        max-width: 5rem;
+        max-height: 5rem;
+    }
+
+    .text{
+        max-width: 15rem;
+        font-size: 0.9rem;
+    }
+
+    .summary{
+        border-radius: 0;
+        box-shadow: 0 0 0;
+    }
+
+    .button{
+        padding: 1rem;
+    }
+
+    footer{
+        padding-top: 0;
+        padding-bottom: 3rem;
+    }
 }
