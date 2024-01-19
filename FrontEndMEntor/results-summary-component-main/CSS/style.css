@@ -177,14 +177,6 @@ footer a {
         border-radius: 0;
     }
 
-    .summary .description-points{
-        grid-template-columns: 1fr;
-    }
-    
-    .part-one{
-        padding-left: 8rem;
-    }
-
     .summary .button{
         padding: 1rem;
     }
