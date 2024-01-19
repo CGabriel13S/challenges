@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+* {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    font-family: Figtree;
+
+    display: grid;
+    place-content: center;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

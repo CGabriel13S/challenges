@@ -1,37 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
-
-*{
-    margin: 0rem;
-    padding: 0rem;
-}
-
-body{
-  display: grid;
-  grid-template-columns: 25rem;
-  min-height: 100vh;
-  place-content: center center;
-  background-color: hsl(47, 88%, 63%);
-  font-family: Figtree;
-}
-
-main{
+main {
+  max-width: 315px;
   background-color: white;
-  padding: 2rem;
+  padding: 1.3rem;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem black;
   border: 0.12rem solid black;
 }
 
-main:hover{
+main:hover {
   box-shadow: 1rem 1rem black;
 }
 
-.ilustracao{
-  max-width: 100%;
+header img {
   border-radius: 1rem;
 }
 
-.learning{
+header .learning {
   background-color: hsl(47, 88%, 63%);
   max-width: 5rem;
   padding: 0.7rem;
@@ -41,26 +25,26 @@ main:hover{
   text-align: center;
 }
 
-.data-de-publicacao{
+header .data-de-publicacao {
   margin-top: 1rem;
 }
 
-.titulo{
-  margin: 1rem 0rem;
+article h1 {
+  margin: 1rem 0;
   font-weight: 800;
 }
 
-.titulo:hover{
+article h1:hover {
   color: hsl(47, 88%, 63%);
 }
 
-.texto{
+article p {
   margin-bottom: 1.5rem;
   color: hsl(0, 0%, 50%);
   line-height: 1.5rem;
 }
 
-.autor{
+.autor {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -68,57 +52,54 @@ main:hover{
   font-size: 0.9rem;
 }
 
-.avatar{
+.autor img {
   width: 2.5rem;
 }
 
 .attribution {
-    font-size: 1rem;
-    text-align: center;
-    margin-top: 1rem;
-  }
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1.3rem;
+}
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-    text-decoration: none;
-    font-weight: 800;
-  }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+  font-weight: 800;
+  padding: 1rem 0;
+}
 
-@media (max-width: 400px){
-  body{
-    grid-template-columns: 18rem;
-  }
-
-  main{
+@media (max-width: 400px) {
+  main {
     padding: 1rem;
   }
 
-  .learning{
+  header .learning {
     padding: 0.4rem;
     font-size: 0.9rem;
   }
 
-  .data-de-publicacao{
+  header .data-de-publicacao {
     font-size: 0.8rem;
   }
 
-  .titulo{
+  article h1 {
     font-size: 1.3rem;
   }
 
-  .texto{
+  article p {
     font-size: 0.8rem;
   }
 
-  .avatar{
+  .autor {
+    font-size: 0.8rem;
+  }
+
+  .autor img {
     width: 1.9rem;
   }
 
-  .nome{
-    font-size: 0.8rem;
-  }
-
-  .attribution{
+  .attribution {
     font-size: 0.8rem;
   }
 }
