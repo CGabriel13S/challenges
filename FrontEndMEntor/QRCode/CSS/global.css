@@ -8,7 +8,11 @@
 body{
     max-width: 1440px;
     margin: 0 auto;
+    min-height: 100vh;   
     font-family: Outfit;
+    background-color: hsl(212, 45%, 89%);
+    display: grid;
+    place-content: center center;
 }
 
 img{
