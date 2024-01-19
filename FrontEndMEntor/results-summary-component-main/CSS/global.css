@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: Hanken Grotesk;
+    display: grid;
+    place-content: center center;
+}
+
+.descriptions {
+    display: flex;
+    padding: 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
