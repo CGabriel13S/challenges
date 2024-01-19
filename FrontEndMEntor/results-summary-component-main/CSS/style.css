@@ -1,6 +1,5 @@
 main {
     display: flex;
-    place-content: center center;
     box-shadow: 0.1rem 0.3rem 0.5rem rgb(214, 207, 207);
     border-radius: 2rem;
 }
