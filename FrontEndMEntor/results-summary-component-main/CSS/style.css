@@ -151,7 +151,7 @@ footer a {
     }
 }
 
-@media (max-width: 400px) or (max-width: 700px){
+@media (max-width: 700px){
     main{
         display: grid;
         grid-template-columns: 1fr;
