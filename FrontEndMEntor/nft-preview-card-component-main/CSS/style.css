@@ -2,6 +2,7 @@ main{
     max-width: 20rem;
     padding: 1.5rem;
     border-radius: 1rem;
+    box-shadow: 0rem 0.2rem 0.5rem 1rem hsl(214, 51%, 10%);
     background-color: hsl(216, 50%, 16%);
     color: white;
     display: flex;
@@ -18,7 +19,7 @@ main h1:hover, .criador span:hover{
 }
 
 main .texto{
-    color: hsl(216, 18%, 35%);
+    color: hsl(216, 14%, 52%);
     font-size: 1.2rem;
     max-width: 30ch;
     line-height: 1.6rem;
@@ -45,7 +46,6 @@ main .cryptomoeda{
     background: url(../images/icon-ethereum.svg) no-repeat;
     position: absolute;
     left: 0.2rem;
-    top: 0.12rem;
 }
 
 .cryptomoeda .tempo{
@@ -59,8 +59,7 @@ main .cryptomoeda{
     height: 20px;
     background: url(../images/icon-clock.svg) no-repeat;
     position: absolute;
-    right: 6.5rem;
-    top: 0.2rem;
+    right: 5.5rem;
 }
 
 main .linha{
@@ -70,7 +69,7 @@ main .linha{
 }
 
 main .criador{
-    color: hsl(216, 18%, 35%);
+    color: hsl(215, 14%, 49%);
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -119,7 +118,6 @@ main .criador{
 
     .cryptomoeda .tempo::before{
         right: 5.4rem;
-        top: 0rem;
     }
 
     main .linha{
