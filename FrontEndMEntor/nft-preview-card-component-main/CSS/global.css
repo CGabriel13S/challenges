@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: hsl(217, 54%, 11%);
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-content: center;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 1rem;
+    display: block;
+}

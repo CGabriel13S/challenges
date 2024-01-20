@@ -1,0 +1,17 @@
+main{
+    max-width: 25rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: hsl(216, 50%, 16%);
+    color: white;
+    line-height: 3rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
