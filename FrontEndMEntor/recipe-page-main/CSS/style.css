@@ -35,4 +35,15 @@ main .tempo-de-preparo{
     font-weight: bolder;
 }
 
+.nutrition h2{
+    margin-bottom: 1.5rem;
+}
+
+main .tabela-nutricional{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
 
