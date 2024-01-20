@@ -157,6 +157,7 @@ footer a {
     .results{
         border-radius: 0 0 2.5rem 2.5rem;
         gap: 1.2rem;
+        padding: 3rem 5rem;
     }
 
     .results .points{
@@ -171,6 +172,10 @@ footer a {
 
     .summary{
         border-radius: 0;
+    }
+
+    .summary .part-one{
+        padding-left: 7rem;
     }
 
     .summary .button{
