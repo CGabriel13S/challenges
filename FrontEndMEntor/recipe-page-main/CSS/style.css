@@ -1,0 +1,38 @@
+main{
+    max-width: 1440px;
+    margin: 7rem 3rem;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    background-color: white;
+    display: grid;
+    gap: 2rem;
+}
+
+main .introduction{
+    gap: 1.5rem;
+    line-height: 1.4rem;
+    font-size: 0.98rem;
+    color: hsl(30, 10%, 34%);
+    display: grid;
+}
+
+.introduction h1{
+    color: black;
+}
+
+main .tempo-de-preparo{
+    padding: 2rem 2.2rem;
+    background-color: hsl(330, 100%, 98%);
+}
+
+.tempo-de-preparo h3{
+    color: hsl(332, 51%, 32%);
+}
+
+.tempo-de-preparo ul{
+    padding-left: 1.5rem;
+    line-height: 2rem;
+    font-weight: bolder;
+}
+
+
