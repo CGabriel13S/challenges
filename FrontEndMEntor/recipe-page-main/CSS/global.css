@@ -4,13 +4,14 @@
 }
 
 body{
-    max-width: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2rem;
     background-color: hsl(30, 54%, 90%);
     color: hsl(14, 45%, 36%);
     display: grid;
-    place-content: center center;
+    place-content: center;
 }
 
 img{
