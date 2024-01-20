@@ -1,15 +1,20 @@
 main{
-    max-width: 25rem;
-    padding: 2rem;
+    max-width: 20rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     background-color: hsl(216, 50%, 16%);
     color: white;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
 }
 
 main h1{
     font-size: 1.6rem;
+}
+
+main h1:hover, .criador span:hover{
+    color: hsl(178, 100%, 50%);
 }
 
 main .texto{
@@ -58,8 +63,8 @@ main .cryptomoeda{
     top: 0.2rem;
 }
 
-.linha{
-    width: 25rem;
+main .linha{
+    width: 20rem;
     height: 0.1rem;
     background-color: hsl(215, 32%, 27%);
 }
@@ -77,10 +82,58 @@ main .criador{
 }
 
 .attribution {
-    font-size: 11px;
+    margin-top: 2rem;
+    font-size: 1rem;
     text-align: center;
-  }
+    color: white;
+}
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+    text-decoration: none;
+    padding: 1rem 0;
+}
+
+@media (max-width: 400px){
+    main{
+        max-width: 18rem;
+        max-height: 35rem;
+    }
+
+    main h1{
+        font-size: 1.4rem;
+    }
+
+    main .texto{
+        font-size: 1rem;
+        max-width: 30ch;
+    }
+
+    main .cryptomoeda{
+        font-size: 1rem;
+    }
+
+    .cryptomoeda .etherium::before{
+        top: -0.1rem;
+    }
+
+    .cryptomoeda .tempo::before{
+        right: 5.4rem;
+        top: 0rem;
+    }
+
+    main .linha{
+        max-width: 18.2rem;
+    }
+
+    main .criador{
+        font-size: 0.9rem;
+        gap: 1rem;
+    }
+
+    .criador img{
+        max-width: 2rem;
+    }
+
+
+}
