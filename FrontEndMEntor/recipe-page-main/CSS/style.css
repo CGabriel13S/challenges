@@ -40,6 +40,14 @@ main .tempo-de-preparo{
     font-size: 1.07rem;
 }
 
+main .ingredientes::after, .instructions::after{
+    content: "";
+    height: 0.1rem;
+    width: 45rem;
+    background-color: rgb(218, 209, 209);
+    display: inline-block;
+}
+
 .nutrition h2{
     margin-bottom: 1.5rem;
 }
@@ -61,7 +69,6 @@ main .tempo-de-preparo{
 }
 
 footer p{
-    margin-top: 1.5rem;
     font-size: 0.9rem;
     font-weight: bold;
     color: black;
