@@ -37,7 +37,6 @@ ul, ol{
 }
 
 .linha{
-    content: "";
     width: 45rem;
     height: 0.05rem;
     margin-top: 2rem;
