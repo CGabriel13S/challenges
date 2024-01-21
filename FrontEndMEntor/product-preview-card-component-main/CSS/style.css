@@ -1,0 +1,19 @@
+main .apresentacao{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.apresentacao h1{
+    font-size: 1.1rem;
+}
+
+.apresentacao h2{
+    max-width: 12ch;
+    font-size: 2rem;
+}
+
+.apresentacao p{
+    font-size: 1rem;
+}
