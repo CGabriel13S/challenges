@@ -3,17 +3,52 @@ main .apresentacao{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    position: relative;
 }
 
 .apresentacao h1{
-    font-size: 1.1rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: hsl(158, 36%, 37%);
 }
 
 .apresentacao h2{
     max-width: 12ch;
-    font-size: 2rem;
+    font-size: 2.3rem;
+    font-family: Fraunces;
 }
 
 .apresentacao p{
-    font-size: 1rem;
+    font-size: 0.91rem;
+    line-height: 1.4rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.apresentacao .preco{
+    color: hsl(158, 36%, 37%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: start;
+    gap: 2rem;
+}
+
+button::before{
+    content: "";
+    width: 15px;
+    height: 16px;
+    background: url(/images/icon-cart.svg) no-repeat center;
+    display: block;
+    position: absolute;
+    left: 6.5rem;
+}
+
+.preco .preco-1{
+    font-family: Fraunces;
+    font-size: 2rem;
+}
+
+.preco .preco-2{
+    text-decoration: line-through;
 }

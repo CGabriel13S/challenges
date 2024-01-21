@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,11 +10,13 @@ body{
     margin: 0 auto;
     min-height: 100vh;
     background-color: hsl(30, 38%, 92%);
+    font-family: Montserrat;
     display: grid;
-    place-content: center center;
+    place-content: center;
 }
 
 main{
+    max-width: 700px;
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -21,4 +25,14 @@ main{
 img{
     max-width: 100%;
     display: block;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
 }
