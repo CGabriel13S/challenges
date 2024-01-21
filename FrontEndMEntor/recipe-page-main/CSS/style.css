@@ -68,9 +68,14 @@ main .ingredientes::after, .instructions::after{
 }
 
 footer p{
+    text-align: center;
     font-size: 0.9rem;
     font-weight: bold;
     color: black;
+}
+
+footer a{
+    color: hsl(228, 45%, 44%);
 }
 
 @media(max-width: 400px){
