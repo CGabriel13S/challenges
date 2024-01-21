@@ -44,7 +44,7 @@ main .tempo-de-preparo{
     margin-bottom: 1.5rem;
 }
 
-main .tabela-nutricional{
+.nutrition .tabela-nutricional{
     margin-top: 1.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -60,4 +60,55 @@ main .tabela-nutricional{
     margin-top: initial;
 }
 
+footer p{
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black;
+}
 
+@media(max-width: 400px){
+    main{
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .introduction{
+        gap: 2rem;
+        margin: 0 2rem;
+    }
+
+    .introduction h1{
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+    }
+
+    .introduction p{
+        font-size: 1.040rem;
+    }
+
+    main .tempo-de-preparo{
+        margin: 0 2rem;
+        border-radius: 0.6rem;
+    }
+
+    main .instructions{
+        font-size: 1.05rem;
+    }
+
+    .nutrition h2{
+        margin-bottom: 1rem;
+    }
+
+    .nutrition p{
+        font-size: 1.05rem;
+    }
+    
+    .nutrition .tabela-nutricional{
+        margin-bottom: 4rem;
+    }
+}
