@@ -44,6 +44,10 @@ button::before{
     left: 6.5rem;
 }
 
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+}
+
 .preco .preco-1{
     font-family: Fraunces;
     font-size: 2rem;
