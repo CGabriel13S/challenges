@@ -34,7 +34,7 @@ main .apresentacao{
     gap: 2rem;
 }
 
-button::before{
+main button::before{
     content: "";
     width: 15px;
     height: 16px;
@@ -44,7 +44,7 @@ button::before{
     left: 6.5rem;
 }
 
-button:hover{
+main button:hover{
     background-color: hsl(212, 21%, 14%);
 }
 
@@ -55,4 +55,45 @@ button:hover{
 
 .preco .preco-2{
     text-decoration: line-through;
+}
+
+footer p{
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer a{
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    padding: 1rem 0;
+}
+
+
+@media (max-width: 400px){
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 1rem;
+    }
+
+    img{
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+
+    main .apresentacao{
+        padding: 2rem;
+    }
+
+    .apresentacao h2{
+        font-size: 2rem;
+        max-width: 13ch;
+    }
+
+    .apresentacao p{
+        font-size: 0.88rem;
+    }
 }

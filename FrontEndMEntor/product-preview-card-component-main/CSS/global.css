@@ -39,16 +39,3 @@ button {
     border: none;
     background-color: hsl(158, 36%, 37%);
 }
-
-footer p{
-    margin-top: 2rem;
-    font-size: 1rem;
-    font-weight: 700;
-    text-align: center;
-}
-
-footer a {
-    color: hsl(228, 45%, 44%);
-    text-decoration: none;
-    padding: 1rem 0;
-}
