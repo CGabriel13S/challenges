@@ -11,13 +11,18 @@ main{
 main .introduction{
     gap: 1.5rem;
     line-height: 1.4rem;
-    font-size: 0.98rem;
     color: hsl(30, 10%, 34%);
     display: grid;
 }
 
 .introduction h1{
     color: black;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.introduction p{
+    font-size: 1.1rem;
 }
 
 main .tempo-de-preparo{
@@ -27,11 +32,12 @@ main .tempo-de-preparo{
 
 .tempo-de-preparo h3{
     color: hsl(332, 51%, 32%);
+    font-size: 1.4rem;
 }
 
 .tempo-de-preparo ul{
     line-height: 2rem;
-    font-weight: bolder;
+    font-size: 1.07rem;
 }
 
 .nutrition h2{
@@ -43,6 +49,10 @@ main .tabela-nutricional{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+}
+
+.tabela-nutricional .nutriente{
+    padding-left: 2.5rem;
 }
 
 .tabela-nutricional .linha{

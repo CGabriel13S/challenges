@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -6,12 +8,16 @@
 body{
     max-width: 1440px;
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Outfit;
     line-height: 2rem;
     background-color: hsl(30, 54%, 90%);
     color: hsl(14, 45%, 36%);
     display: grid;
     place-content: center;
+}
+
+h1, h2{
+    font-family: 'Young Serif';
 }
 
 img{
@@ -24,7 +30,7 @@ main .subtitulo{
     font-size: 1.8rem;
 }
 
-ul{
+ul, ol{
     padding-left: 1.5rem;
     margin-top: 1rem;
     color: hsl(30, 10%, 34%);
@@ -37,4 +43,8 @@ ul{
     margin-top: 2rem;
     background-color: rgb(218, 209, 209);
     display: block;
+}
+
+.destaque{
+    font-weight: 700;
 }
