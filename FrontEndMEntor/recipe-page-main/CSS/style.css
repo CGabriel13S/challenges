@@ -45,4 +45,9 @@ main .tabela-nutricional{
     gap: 1rem;
 }
 
+.tabela-nutricional .linha{
+    grid-column: 1 / -1;
+    margin-top: initial;
+}
+
 

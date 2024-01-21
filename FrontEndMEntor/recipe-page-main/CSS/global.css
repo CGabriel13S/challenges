@@ -29,3 +29,12 @@ ul{
     margin-top: 1rem;
     color: hsl(30, 10%, 34%);
 }
+
+.linha{
+    content: "";
+    width: 45rem;
+    height: 0.05rem;
+    margin-top: 2rem;
+    background-color: rgb(218, 209, 209);
+    display: block;
+}
