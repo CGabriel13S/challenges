@@ -34,7 +34,7 @@ main .apresentacao{
     gap: 2rem;
 }
 
-main button::before{
+.apresentacao button::before{
     content: "";
     width: 15px;
     height: 16px;
@@ -44,7 +44,7 @@ main button::before{
     left: 6.5rem;
 }
 
-main button:hover{
+.apresentacao button:hover{
     background-color: hsl(212, 21%, 14%);
 }
 
@@ -99,5 +99,14 @@ footer a{
 
     .apresentacao p{
         font-size: 0.79rem;
+    }
+
+    .apresentacao button{
+        padding: 0.9rem;
+    }
+
+    footer p{
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
     }
 }

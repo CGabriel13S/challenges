@@ -38,4 +38,5 @@ button {
     color: white;
     border: none;
     background-color: hsl(158, 36%, 37%);
+    cursor: pointer;
 }
