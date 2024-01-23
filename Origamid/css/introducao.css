@@ -1,4 +1,9 @@
 main .introducao{
+    max-width: 1200px;
+    padding: 8rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 8rem;
     align-items: center;
 }
 
@@ -27,16 +32,16 @@ main .introducao{
 @media(max-width: 1000px){
     main .introducao{
         grid-template-columns: 1fr 1fr;
-        gap: 2.5rem;
+        gap: 4rem;
     }
     .informacoes h1{
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 
 @media(max-width: 800px){
     .informacoes h1{
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .informacoes h1::before{
@@ -50,11 +55,17 @@ main .introducao{
 }
 
 @media(max-width: 400px){
-    .introducao{
-        grid-template-columns: 1fr;
+    main .introducao{
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 2rem;
     }
 
-    .introducao img{
-        display: none;
+    .informacoes h1{
+        font-size: 1.1rem;
+    }
+    
+    .informacoes p{
+        font-size: 0.7rem;
     }
 }
