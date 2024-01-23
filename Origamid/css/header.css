@@ -1,0 +1,35 @@
+main .header{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+    gap: 2.5rem;
+}
+
+ul li{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media(max-width: 630px){
+    main .header{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    ul li{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        background-color: rgb(247, 245, 245);
+    }
+}

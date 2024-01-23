@@ -1,0 +1,60 @@
+main .introducao{
+    align-items: center;
+}
+
+.informacoes h1{
+    margin-bottom: 1.5rem;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    position: relative;
+}
+
+.informacoes h1::before{
+    content: "";
+    display: block;
+    width: 130px;
+    height: 100px;
+    background: url(/img/detalhe.svg) no-repeat center;
+    position: absolute;
+    top: -15px;
+    z-index: -1;
+}
+
+.informacoes p{
+    font-size: 1.2rem;
+}
+
+@media(max-width: 1000px){
+    main .introducao{
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+    .informacoes h1{
+        font-size: 4rem;
+    }
+}
+
+@media(max-width: 800px){
+    .informacoes h1{
+        font-size: 1.5rem;
+    }
+
+    .informacoes h1::before{
+        width: 20px;
+        height: 10px;
+    }
+
+    .informacoes p{
+        font-size: 0.8rem;
+    }
+}
+
+@media(max-width: 400px){
+    .introducao{
+        grid-template-columns: 1fr;
+    }
+
+    .introducao img{
+        display: none;
+    }
+}
