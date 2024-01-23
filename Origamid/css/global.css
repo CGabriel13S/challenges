@@ -8,12 +8,11 @@ body{
 }
 
 .container{
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 3rem;
+    max-width: 1200px;
+    padding: 8rem 3rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 5rem;
+    gap: 8rem;
 }
 
 ul{
