@@ -1,6 +1,4 @@
 main .introducao{
-    max-width: 1200px;
-    padding: 8rem 3rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 8rem;
