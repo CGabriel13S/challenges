@@ -26,3 +26,10 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.subtitulo{
+    max-width: 5ch;
+    word-break: break-all;
+    font-size: 6rem;    
+    text-transform: uppercase;
+}

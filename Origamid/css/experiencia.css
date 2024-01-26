@@ -1,0 +1,53 @@
+.experiencia{
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 8rem;
+}
+
+.experiencia .subtitulo{
+    color: rgb(190, 180, 180);
+}
+
+.projetos{
+    display: grid;
+    gap: 2rem;
+}
+
+.projetos p{
+    max-width: 40ch;
+    font-size: 1.5rem;
+}
+
+.projeto{
+    padding: 2rem;
+    background-color: rgb(236, 228, 228);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.projeto span{
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.projeto p{
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    color: rgb(88, 84, 84);
+}
+
+.projeto .nivel ul{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.nivel ul li{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: white;
+}
