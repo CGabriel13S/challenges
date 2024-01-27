@@ -1,4 +1,4 @@
-.experiencia{
+main .experiencia{
     margin-top: 7rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -9,7 +9,7 @@
     color: rgb(190, 180, 180);
 }
 
-.projetos{
+.experiencia .projetos{
     display: grid;
     gap: 2rem;
 }
@@ -50,4 +50,39 @@
     border-radius: 0.5rem;
     font-size: 1rem;
     background-color: white;
+}
+
+@media (max-width: 800px){
+    main .experiencia{
+        margin-top: 5rem;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .experiencia .subtitulo{
+        max-width: initial;
+        word-break: initial;
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .projetos p{
+        font-size: 1.2rem;
+    }
+
+    .projeto{
+        grid-template-columns: 1fr;
+    }
+
+    .projeto span{
+        font-size: 1.1rem;
+    }
+
+    .projeto p{
+        font-size: 1.05rem;
+    }
+
+    .nivel ul li{
+        font-size: 0.9rem;
+    }
 }

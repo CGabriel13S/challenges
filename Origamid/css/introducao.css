@@ -53,17 +53,24 @@ main .introducao{
 }
 
 @media(max-width: 400px){
+
     main .introducao{
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        padding: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .introducao img{
+        display: none;
     }
 
     .informacoes h1{
-        font-size: 1.1rem;
+        font-size: 3rem;
     }
     
+    .informacoes h1::before{
+        display: none;
+    }
+
     .informacoes p{
-        font-size: 0.7rem;
+        font-size: 1.2rem;
     }
 }
