@@ -20,8 +20,9 @@ main .experiencia{
 }
 
 .projeto{
-    padding: 2rem;
+    padding: 1.5rem;
     background-color: rgb(236, 228, 228);
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
@@ -30,6 +31,16 @@ main .experiencia{
 .projeto span{
     font-weight: bolder;
     font-size: 1.2rem;
+}
+
+.descricao span::before{
+    content: "";
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829, #67dd0a);
+    display: block;
+    position: absolute;
+    left: -0.2rem;
 }
 
 .projeto p{
