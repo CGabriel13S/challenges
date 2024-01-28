@@ -1,0 +1,67 @@
+.formacao{
+    margin-top: 7rem;
+    background-color: rgb(39, 38, 38);
+}
+
+.formacao .container-formacao{
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.informacoes-formacao{
+    padding: 1rem 3rem;
+    display: grid;
+    gap: 2rem;
+}
+
+.informacoes-formacao .curso-superior{
+    color: white;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.curso-superior .curso{
+    padding: 1rem;
+    background-color: black;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.curso span{
+    color: rgb(105, 92, 92);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.cursos-menores{
+    margin-top: 2.5rem;
+    color: white;
+    font-size: 0.9rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.cursos-menores span{
+    color: rgb(105, 92, 92);
+}
+
+.cursos-menores .cursos-tipo{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.cursos-menores .cursos-intensivos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 2rem;
+}
+
+.cursos-intensivos span{
+    text-align: right;
+    margin-right: 2rem;
+}
+
+.cursos-menores .cursos-idiomas{
+    line-height: 2rem;
+}
