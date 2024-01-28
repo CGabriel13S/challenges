@@ -9,10 +9,24 @@
     grid-template-columns: 1fr 2fr;
 }
 
+.container-formacao .subtitulo{
+    max-width: 6ch;
+}
+
 .informacoes-formacao{
     padding: 1rem 3rem;
     display: grid;
     gap: 2rem;
+}
+
+.informacoes-formacao > p{
+    max-width: 40ch;
+    font-size: 1.4rem;
+    color: rgb(105, 92, 92);
+}
+
+.informacoes-formacao > p span{
+    color: white;
 }
 
 .informacoes-formacao .curso-superior{
@@ -37,7 +51,6 @@
 .cursos-menores{
     margin-top: 2.5rem;
     color: white;
-    font-size: 0.9rem;
     display: grid;
     gap: 1.5rem;
 }
@@ -48,7 +61,7 @@
 
 .cursos-menores .cursos-tipo{
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .cursos-menores .cursos-intensivos{
