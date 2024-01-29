@@ -19,6 +19,7 @@ main .contato{
 
 .conclusao .informacoes p{
     font-size: 2.5rem;
+    font-weight: bold;
     color: white;
     line-height: 4rem;
 }
@@ -30,4 +31,27 @@ main .contato{
 footer{
     padding: 3rem;
     color: rgb(126, 111, 111);
+}
+
+@media (max-width: 800px){
+    main .contato{
+        height: 30rem;
+    }
+    
+    .contato .conclusao{
+        grid-template-columns: 1fr;
+    }
+
+    .conclusao p{
+        font-size: 1.1rem;
+    }
+
+    .conclusao .informacoes p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    footer{
+        padding-right: 0;
+    }
 }
