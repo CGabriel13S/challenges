@@ -95,3 +95,37 @@
 .cursos-menores .cursos-idiomas{
     line-height: 2rem;
 }
+
+@media (max-width: 800px){
+    main .formacao{
+        margin-top: 5rem;
+    }
+
+    .formacao .container-formacao{
+        grid-template-columns: 1fr;
+    }
+    
+    .container-formacao .subtitulo{
+        margin-left: 1.2rem;
+        max-width: initial;
+        word-break: initial;
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .informacoes-formacao{
+        padding: 2.5rem 1.2rem;
+    }
+
+    .informacoes-formacao > p{
+        font-size: 1.2rem;
+    }
+
+    .curso-superior{
+        flex-wrap: wrap;
+    }
+
+    .curso::before{
+        display: none;
+    }
+}
