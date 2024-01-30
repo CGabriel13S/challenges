@@ -52,3 +52,13 @@ footer{
 footer p a{
     padding: 1rem 0;
 }
+
+@media (max-width: 800px){
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .container{
+        order: 1;
+    }
+}
