@@ -28,7 +28,6 @@ main .container{
 }
 
 main .container .informacoes{
-    font-size: 1rem;
     font-family: 'Lexend Deca';
     color: hsla(0, 0%, 100%, 0.75);
     text-transform: uppercase;
@@ -60,5 +59,17 @@ footer p a{
 
     .container{
         order: 1;
+    }
+
+    .container h1{
+        font-size: 1.9rem;
+    }
+
+    .container > p{
+        font-size: 1.2rem;
+    }
+
+    .container .informacoes p span{
+        font-size: 1.5rem;
     }
 }
