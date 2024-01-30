@@ -1,0 +1,54 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main .container{
+    padding: 4rem;
+    background-color: hsl(244, 38%, 16%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.container h1{
+    font-size: 3rem;
+}
+
+.container h1 span{
+    color: hsl(277, 64%, 61%);
+}
+
+.container > p{
+    margin-bottom: 2rem;
+    max-width: 40ch;
+    font-size: 1.2rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+main .container .informacoes{
+    font-size: 1rem;
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+    text-transform: uppercase;
+    display: flex;
+    gap: 2rem;
+}
+
+.informacoes p span{
+    font-size: 1.7rem;
+    font-weight: bolder;
+    color: white;
+}
+
+footer{
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
+}
+
+footer p a{
+    padding: 1rem 0;
+}
