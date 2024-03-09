@@ -1,0 +1,21 @@
+main .submit .mensagem{
+    padding: 0 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.mensagem > span {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+}
+
+.submit .mensagem .texto h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.2rem;
+    color: white;
+    font-size: 2rem;
+}
