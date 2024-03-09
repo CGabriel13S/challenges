@@ -10,69 +10,36 @@
   <link rel="stylesheet" href="/Javascript/interactive-rating-component-main/css/style.css">
 
   <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <main>
-    <section class="avaliacao remocao">
-      <div class="container texto">
+    <section class="avaliacao container">
+      <div class="texto">
         <img src="/Javascript/interactive-rating-component-main/images/icon-star.svg" alt="estrela">
         <h1>How did we do?</h1>
-        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
-          offering!</p>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       </div>
       <div class="notas">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>5</span>
+        <span class="nota">1</span>
+        <span class="nota">2</span>
+        <span class="nota">3</span>
+        <span class="nota">4</span>
+        <span class="nota">5</span>
       </div>
       <a class="submit" href="#">Submit</a>
     </section>
 
-    <section class="submit">
-      <div class="container mensagem">
-        <img src="/Javascript/interactive-rating-component-main/images/illustration-thank-you.svg" width="200px">
-        <span>You selected <!-- Add rating here --> out of 5</span>
-        <div class="texto">
-          <h2>Thank you!</h2>
-          <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in
-            touch!</p>
-        </div>
-
+    <section class="mensagem remocao container">
+      <img src="/Javascript/interactive-rating-component-main/images/illustration-thank-you.svg" width="200px">
+      <span>You selected <!-- Add rating here --> out of 5</span>
+      <div class="texto">
+        <h2>Thank you!</h2>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
       </div>
-
     </section>
   </main>
-
-
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-
-
-  <!-- Thank you state end -->
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <script src='/Javascript/interactive-rating-component-main/script.js'></script>
 </body>
 
 </html>

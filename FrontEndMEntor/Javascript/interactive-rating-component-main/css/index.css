@@ -9,7 +9,7 @@ main .avaliacao {
     gap: 1.5rem;
 }
 
-.texto>img {
+.texto > img {
     background-color: hsl(213, 21%, 23%);
     border-radius: 50%;
     padding: 0.7rem;
@@ -34,6 +34,7 @@ main .avaliacao {
     padding: 1.3rem;
     width: 1rem;
     border-radius: 50%;
+    cursor: pointer;
     text-align: center;
     background-color: hsl(213, 21%, 23%);
     color: hsl(217, 12%, 63%);
@@ -46,7 +47,12 @@ main .avaliacao {
     color: white;
 }
 
-.avaliacao a {
+.notas span.ativo {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+
+main .avaliacao a {
     padding: 0.7rem;
     width: 100%;
     border-radius: 0.5rem;

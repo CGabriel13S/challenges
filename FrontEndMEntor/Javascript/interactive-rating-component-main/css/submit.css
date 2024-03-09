@@ -1,4 +1,4 @@
-main .submit .mensagem{
+main .mensagem{
     padding: 0 2rem;
     align-items: center;
     text-align: center;
@@ -13,7 +13,7 @@ main .submit .mensagem{
     color: hsl(25, 97%, 53%);
 }
 
-.submit .mensagem .texto h2 {
+.mensagem .texto h2 {
     margin-top: 3rem;
     margin-bottom: 1.2rem;
     color: white;
