@@ -1,0 +1,44 @@
+main {
+    padding: 3rem;
+    width: 30rem;
+    height: 32rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+main .titulo {
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    display: flex;
+    gap: 2rem;
+}
+
+main dt {
+    position: relative;
+}
+
+main ul dt::after {
+    content: "";
+    width: 27px;
+    height: 28px;
+    position: absolute;
+    right: -1rem;
+    top: -0.2rem;
+    background-image: url(/Javascript/faq-accordion-main/assets/images/icon-plus.svg);
+}
+
+ul dt {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+ul dt:hover {
+    color: hsl(276, 94%, 44%);
+}
+
+main ul dd {
+    font-size: 1rem;
+    color: hsl(292, 16%, 49%);
+}
