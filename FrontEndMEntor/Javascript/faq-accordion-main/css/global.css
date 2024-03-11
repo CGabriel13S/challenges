@@ -18,3 +18,13 @@ img {
 .display-none {
     display: none;
 }
+
+.after::after {
+    content: "";
+    width: 27px;
+    height: 28px;
+    position: absolute;
+    right: -1rem;
+    top: -0.2rem;
+    background-image: url(/Javascript/faq-accordion-main/assets/images/icon-minus.svg);
+}
