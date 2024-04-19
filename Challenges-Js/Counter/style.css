@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    place-content: center center;
+    background-color: rgb(233, 230, 227);
+}
+
+main {
+    display: grid;
+    gap: 3rem;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 4rem;
+}
+
+main span {
+    font-size: 6rem;
+    color: green;
+    font-weight: bolder;
+}
+
+main .botoes {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.botoes button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    background-color: rgb(233, 230, 227);
+    cursor: pointer;
+}
+
+.botoes .increase{
+    border-color: blue;
+}
