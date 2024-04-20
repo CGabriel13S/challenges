@@ -10,10 +10,10 @@ main, header {
 
 img {
     height: 150px;
-    width: 475px;
+    width: 450px;
     max-width: 100%;
     display: block;
-    object-fit: fill;
+    object-fit: cover;
     border-radius: 0.5rem;
     border: 0.3rem solid rgb(212, 162, 22);
 }
