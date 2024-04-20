@@ -9,8 +9,13 @@ main, header {
 }
 
 img {
-    max-width: 50%;
+    height: 150px;
+    width: 475px;
+    max-width: 100%;
     display: block;
+    object-fit: fill;
+    border-radius: 0.5rem;
+    border: 0.3rem solid rgb(212, 162, 22);
 }
 
 ul {
@@ -22,6 +27,7 @@ a {
 }
 main .produto {
     display: flex;
+    gap: 1.5rem;
 }
 
 .produto .titulo {
@@ -32,4 +38,14 @@ main .produto {
 .produto .infos {
     display: flex;
     flex-direction: column;
+}
+
+.infos span {
+    font-size: 1.3rem;
+    color: rgb(138, 104, 13);
+}
+
+.infos p {
+    font-size: 1.1rem;
+    color: rgb(134, 126, 126);
 }
