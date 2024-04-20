@@ -38,11 +38,13 @@ main .produto {
 .produto .infos {
     display: flex;
     flex-direction: column;
+    gap: 1.4rem;
 }
 
 .infos span {
     font-size: 1.3rem;
-    color: rgb(138, 104, 13);
+    font-weight: bolder;
+    color: rgb(194, 152, 35);
 }
 
 .infos p {
