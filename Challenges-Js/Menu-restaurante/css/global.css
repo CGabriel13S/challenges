@@ -29,19 +29,6 @@ a {
 main .produto {
     display: flex;
     gap: 1.5rem;
-    position: relative;
-}
-
-.produto::after {
-    content: "";
-    height: 2px;
-    width: 340px;
-    background-color: black;
-    text-decoration: underline;
-    position: absolute;
-    top: 36px;
-    left: 250px;
-    display: block;
 }
 
 .produto .titulo {
@@ -49,6 +36,19 @@ main .produto {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.produto .titulo::after {
+    content: "";
+    height: 2px;
+    width: 320px;
+    background-color: black;
+    text-decoration: underline;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+    display: block;
 }
 
 .produto .infos {
