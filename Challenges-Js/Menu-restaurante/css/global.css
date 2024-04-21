@@ -25,14 +25,30 @@ ul {
 a {
     text-decoration: none;
 }
+
 main .produto {
     display: flex;
     gap: 1.5rem;
+    position: relative;
+}
+
+.produto::after {
+    content: "";
+    height: 2px;
+    width: 340px;
+    background-color: black;
+    text-decoration: underline;
+    position: absolute;
+    top: 36px;
+    left: 250px;
+    display: block;
 }
 
 .produto .titulo {
+    font-size: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .produto .infos {
@@ -42,7 +58,7 @@ main .produto {
 }
 
 .infos span {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bolder;
     color: rgb(194, 152, 35);
 }
