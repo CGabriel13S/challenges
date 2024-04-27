@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
 * {
     padding: 0;
     margin: 0;
+    font-family: "Roboto";
 }
 
 main, header {
@@ -10,8 +13,8 @@ main, header {
 
 img {
     height: 150px;
-    width: 450px;
-    max-width: 100%;
+    width: 100%;
+    min-width: 255px;
     display: block;
     object-fit: cover;
     border-radius: 0.5rem;
@@ -41,13 +44,11 @@ main .produto {
 
 .produto .titulo::after {
     content: "";
-    height: 2px;
-    width: 320px;
+    height: 1px;
+    width: 100%;
     background-color: black;
-    text-decoration: underline;
     position: absolute;
     top: 36px;
-    left: 0px;
     display: block;
 }
 
