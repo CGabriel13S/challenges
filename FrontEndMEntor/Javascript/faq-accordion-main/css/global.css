@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -8,6 +14,7 @@ body {
     grid-template-rows: 170px;
     justify-items: center;
     background-color: hsl(275, 100%, 97%);
+    font-family: "Work Sans";
 }
 
 img {
@@ -27,4 +34,11 @@ img {
     right: -1rem;
     top: -0.2rem;
     background-image: url(/Javascript/faq-accordion-main/assets/images/icon-minus.svg);
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-rows: 150px;
+    }
+    
 }

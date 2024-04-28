@@ -1,7 +1,11 @@
+.img-fundo {
+    width: 100%;
+}
+
 main {
     padding: 3rem;
     width: 30rem;
-    height: 32rem;
+    height: auto;
     border-radius: 1rem;
     background-color: white;
 }
@@ -29,8 +33,9 @@ main ul dt::after {
 
 ul dt {
     margin: 1rem 0;
+    padding-right: 2rem;
     font-size: 1.2rem;
-    font-weight: bolder;
+    font-weight: 500;
     cursor: pointer;
 }
 
@@ -39,6 +44,55 @@ ul dt:hover {
 }
 
 main ul dd {
-    font-size: 1rem;
+    line-height: 1.6rem;
+    font-size: 0.9rem;
     color: hsl(292, 16%, 49%);
+}
+
+ul dd::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: rgb(228, 220, 220);
+    display: block;
+}
+
+footer {
+    margin-top: 1rem;
+}
+
+@media (max-width: 700px) {
+    .img-fundo {
+        object-fit: cover;
+        height: 250px;
+    }
+
+    main {
+        padding: 2rem;
+        width: 15rem;
+        border-radius: 0.6rem;
+    }
+
+    main .titulo {
+        align-items: center;
+        gap: 1rem;
+    }
+
+    main .titulo .icon-star {
+        height: 1.8rem;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    
+    main dt {
+        font-size: 0.9rem;
+    }
+
+    dd {
+        margin-top: 1.5rem;
+        line-height: 1.4rem;
+        font-size: 0.9;
+    }
 }
