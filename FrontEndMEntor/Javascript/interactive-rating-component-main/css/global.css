@@ -10,6 +10,7 @@ body {
     display: grid;
     place-content: center;
     background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass";
 }
 
 .container {
