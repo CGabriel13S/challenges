@@ -26,6 +26,7 @@ main .avaliacao {
 
 .avaliacao .notas {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: center;
 }
@@ -70,4 +71,14 @@ main .avaliacao a {
 .avaliacao a:hover {
     background-color: white;
     color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 700px) {
+    .avaliacao .notas {
+        gap: 0.5rem;
+    }
+
+    .avaliacao .notas > span {
+        padding: 0.98rem;
+    }
 }

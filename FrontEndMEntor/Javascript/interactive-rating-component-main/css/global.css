@@ -34,3 +34,10 @@ img {
 .remocao{
     display: none !important;
 }
+
+@media (max-width: 700px) {
+    .container {
+        margin: 0 auto;
+        width: 75%;
+    }
+}
