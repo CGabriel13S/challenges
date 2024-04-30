@@ -49,7 +49,7 @@ main ul dd {
     color: hsl(292, 16%, 49%);
 }
 
-ul dd::after {
+ul .faq::after {
     content: "";
     width: 100%;
     height: 1px;
