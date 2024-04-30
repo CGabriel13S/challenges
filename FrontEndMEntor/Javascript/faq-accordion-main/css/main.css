@@ -86,13 +86,13 @@ footer {
         font-size: 2rem;
     }
     
-    main dt {
+    ul .faq dt {
         font-size: 0.9rem;
     }
 
-    dd {
+    ul .faq dd {
         margin-top: 1.5rem;
         line-height: 1.4rem;
-        font-size: 0.9;
+        font-size: 0.9rem;
     }
 }
