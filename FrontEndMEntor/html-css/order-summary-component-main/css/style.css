@@ -1,0 +1,93 @@
+main {
+    border-radius: 1.2rem;
+    background-color: white;
+}
+
+main article {
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+article > p, span, .cancel-order {
+    color: rgb(138, 132, 132);
+}
+
+article h1 {
+    font-size: 2rem;
+}
+
+article p {
+    margin: 1rem 0;
+    max-width: 30ch;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+article .plano-container {
+    width: 75%;
+    padding: 1.3rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0.7rem;
+    position: relative;
+}
+
+.plano-container .tipo-plano-valor {
+    margin-left: 4rem;
+}
+
+.plano-container .tipo-plano-valor::before {
+    content: "";
+    height: 48px;
+    width: 48px;
+    background-image: url(/images/icon-music.svg);
+    position: absolute;
+    left: 25px;
+    display: block;
+}
+
+.plano-container h2 {
+    font-size: 1.2rem;
+}
+
+.plano-container span {
+    font-size: 1.11rem;
+}
+
+.plano-container .change {
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+article .processar-pag {
+    margin-top: 1rem;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 10px 10px 0px rgb(207, 201, 201);
+}
+
+article .cancel-order {
+    margin: 1.2rem 0;
+    font-weight: bolder;
+}
+
+footer {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
