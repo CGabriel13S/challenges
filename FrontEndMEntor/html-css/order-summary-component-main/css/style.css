@@ -91,3 +91,34 @@ footer {
     font-size: 1.1rem;
     text-align: center;
 }
+
+@media (max-width: 700px) {
+    main {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    article h1 {
+        font-size: 1.4rem;
+    }
+
+    article p {
+        font-size: 1rem;
+    }
+
+    .tipo-plano-valor h2, .tipo-plano-valor span {
+        font-size: 0.95rem;
+    }
+
+    .plano-container .change {
+        font-size: 0.95rem;
+    }
+
+    article .processar-pag {
+        font-size: 1.05rem;
+    }
+
+    footer {
+        font-size: 1.05rem;
+    }
+}
