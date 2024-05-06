@@ -21,8 +21,6 @@ main {
 
 main .container {
     padding: 3rem 4rem;
-    height: 480px;
-    width: 300px;
 }
 
 .container span {
@@ -57,4 +55,27 @@ main .container {
 img {
     max-width: 100%;
     display: block;
+}
+
+@media (max-width: 700px) {
+    body {
+        display: block;
+    }
+
+    main {
+        margin: 1rem;
+        flex-direction: column;
+    }
+
+    main .container {
+        padding: 2.5rem;
+    }
+
+    .container p{
+        font-size: 1.1rem;
+    }
+
+    .container a {
+        margin-top: 2.5rem;
+    }
 }

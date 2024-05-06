@@ -8,6 +8,12 @@ main .sedans {
     color: hsl(31, 77%, 52%);
 }
 
+.sedans a:hover {
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid white;
+    color: white;
+}
+
 main .suvs {
     background-color: hsl(184, 100%, 22%);
 }
@@ -16,19 +22,44 @@ main .suvs {
     color: hsl(184, 100%, 22%);
 }
 
+.suvs a:hover {
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid white;
+    color: white;
+}
+
 main .luxury {
     border-bottom-right-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
     background-color: hsl(179, 100%, 13%);
 }
 
-
 .luxury a {
     color: hsl(179, 100%, 13%);
+}
+
+.luxury a:hover {
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid white;
+    color: white;
 }
 
 footer {
     margin-top: 3rem;
     text-align: center;
     font-family: "Lexend Deca";
+}
+
+@media (max-width: 700px) {
+    main .sedans {
+        border-top-right-radius: 0.8rem;
+        border-top-left-radius: 0.8rem;
+        border-bottom-left-radius: 0;
+    }
+
+    main .luxury {
+        border-bottom-left-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
+        border-top-right-radius: 0;
+    }
 }
