@@ -67,6 +67,10 @@ article .plano-container {
     font-weight: bolder;
 }
 
+.plano-container .change:hover {
+    color: hsl(225, 58%, 62%);
+}
+
 article .processar-pag {
     margin-top: 1rem;
     width: 80%;
@@ -81,9 +85,17 @@ article .processar-pag {
     box-shadow: 0px 10px 10px 0px rgb(207, 201, 201);
 }
 
+article .processar-pag:hover {
+    background-color: hsl(225, 58%, 62%);
+}
+
 article .cancel-order {
     margin: 1.2rem 0;
     font-weight: bolder;
+}
+
+article .cancel-order:hover {
+    color: black;
 }
 
 footer {
@@ -94,7 +106,7 @@ footer {
 
 @media (max-width: 700px) {
     main {
-        margin: 0 auto;
+        margin: 2rem auto;
         width: 95%;
     }
 
