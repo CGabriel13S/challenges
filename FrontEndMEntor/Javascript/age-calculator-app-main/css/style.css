@@ -1,0 +1,45 @@
+main {
+    padding: 3rem 4rem;
+    width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 9rem;
+    background-color: white;
+}
+
+main .data .button {
+    display: grid;
+    justify-content: end;
+    position: relative;
+}
+
+.button img {
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    z-index: 1;
+}
+
+.button::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: rgb(206, 193, 193);
+    position: absolute;
+    bottom: 35px;
+}
+
+main .calculo {
+    margin-top: 2rem;
+    font-weight: bolder;
+    font-size: 5rem;
+}
+
+.calculo p > span {
+    color: hsl(259, 100%, 65%);
+}
+
+footer {
+    text-align: center;
+}
