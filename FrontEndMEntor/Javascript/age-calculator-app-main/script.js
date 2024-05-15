@@ -1,59 +1,58 @@
-let showYear = document.querySelector(".show-years")
-let showMonth = document.querySelector(".show-month")
+let showYear = document.querySelector(".show-years");
+let showMonth = document.querySelector(".show-month");
+let showDay = document.querySelector(".show-days");;
 const day = document.querySelector(".day");
 const month = document.querySelector(".month");
 const year = document.querySelector(".year");
 
-let diaAtual = new Date();
-let mesAtual = new Date();
-let anoAtual = new Date();
-
 const button = document.querySelector(".button");
 
-function adicionaEventos() {
-    let array = []
-    day.addEventListener('keyup', () => {
-        if (day.value.length == 2) {
-            let dia = day.value;
-            array.push(dia)
-        }
-    });
+let diasMeses = [30, 28, 30, 31, 30, 31, 30, 30, 31, 30, 31, 30];
 
-    month.addEventListener('keyup', () => {
-        if (month.value.length == 2) {
-            let mes = month.value;
-            array.push(mes)
-        }
-    });
+function pegarDados() {
+    day, month, year.addEventListener('change', () => {})
+};
 
-    year.addEventListener('keyup', () => {
-        if (year.value.length == 4) {
-            let ano = year.value;
-            array.push(ano)
-        }
-    });
-
-    return array;
+function validaData() {
+    
 }
-//let data = adicionaEventos();
-//button.addEventListener("click", () => {
 
-//})
+function realizarCalculo() {
+    button.addEventListener("click", function () {
+        let dados = calculoIdade(day.value, month.value, year.value)
 
-let data = adicionaEventos();
+        showYear.innerText = dados.anos;
+        showMonth.innerText = dados.meses;
+        showDay.innerText = dados.dias;
+    })
+}
 
-button.addEventListener("click", function () {
-    let dia = data[0];
-    let mes = data[1];
-    let ano = data[2];
-    if ((mesAtual.getMonth() + 1) > mes) {
-        ano++;
-        showMonth.innerText = 12 - ((mesAtual.getMonth() + 1) - mes);
-    } else {
-        showMonth.innerText = Math.abs((mesAtual.getMonth() + 1) - mes);
+function calculoIdade(day, month, year) {
+    const dataAtual = new Date();
+    let dias = dataAtual.getDate() - day;
+    let meses = (dataAtual.getMonth() + 1) - month;
+    let anos = dataAtual.getFullYear() - year;
+
+    if (meses < 0 || meses === 0) {
+        anos--;
+        meses += 12;
     }
 
+    if (dias < 0 || dias === 0) {
+        meses--
+        dias += diasMeses[meses - 1]
+    }
 
-    showYear.innerText = anoAtual.getFullYear() - ano;
-})
+    return {
+        anos: anos,
+        meses: meses,
+        dias: dias,
+    }
+
+}
+
+
+pegarDados();
+realizarCalculo();
+
 
