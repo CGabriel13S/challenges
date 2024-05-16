@@ -14,16 +14,18 @@ function pegarDados() {
 };
 
 function validaData() {
-    
+    if (day.value == '' || diasMeses[month.value - 1] < day.value) { 
+        day.style.borderColor = "red";
+    } else {
+        day.style.borderColor = "black";
+    }
 }
 
-function realizarCalculo() {
+function buttonSubmit() {
     button.addEventListener("click", function () {
-        let dados = calculoIdade(day.value, month.value, year.value)
-
-        showYear.innerText = dados.anos;
-        showMonth.innerText = dados.meses;
-        showDay.innerText = dados.dias;
+        validaData();
+        let dados = calculoIdade(day.value, month.value, year.value);
+        renderizacao(dados);
     })
 }
 
@@ -51,8 +53,13 @@ function calculoIdade(day, month, year) {
 
 }
 
+function renderizacao(dados) {
+        showYear.innerText = dados.anos;
+        showMonth.innerText = dados.meses;
+        showDay.innerText = dados.dias;
+}
 
 pegarDados();
-realizarCalculo();
+buttonSubmit();
 
 
