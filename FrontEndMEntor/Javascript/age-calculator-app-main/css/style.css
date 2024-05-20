@@ -10,15 +10,16 @@ main {
 
 main .data .button {
     display: grid;
+    grid-column: 1 / -1;
     justify-content: end;
     position: relative;
 }
 
 .button img {
+    margin-top: 2rem;
     padding: 1rem;
     border-radius: 50%;
     background-color: hsl(259, 100%, 65%);
-    z-index: 1;
 }
 
 .button::after {

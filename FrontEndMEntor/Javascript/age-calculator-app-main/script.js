@@ -13,10 +13,10 @@ const button = document.querySelector(".button");
 let diasMeses = [30, 28, 30, 31, 30, 31, 30, 30, 31, 30, 31, 30];
 
 function pegarDados() {
-    day, month, year.addEventListener('change', () => { })
+    day, month, year.addEventListener('change', () => {}) 
 };
 
-function validaData() {
+function renderError() {
     input.forEach((item) => {
         if (item.value == '') {
             item.style.borderColor = 'red';
@@ -46,9 +46,14 @@ function validaData() {
                     label.style.color = 'black';
                 }
             });
-        } 
+        }
     });
-    if (input[0].value.length == 2 && input[1].value.length == 2 && input[2].value.length == 4) { return true; };
+}
+
+function validaData() {
+    renderError();
+    
+    if (input[0].value.length == 2 && input[1].value.length == 2 && input[2].value.length == 4) { return true };
 }
 
 function buttonSubmit() {
