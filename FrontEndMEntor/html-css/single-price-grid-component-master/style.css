@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    font-family: Karla;
+}
+
+body {
+    max-width: 1200px;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: hsl(204, 43%, 93%);
+
+}
+
+main {
+    margin: 0 auto;
+    width: 700px;
+    border-radius: 1rem;
+}
+
+main .container-community {
+    padding: 3rem;
+    background: white;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    display: grid;
+    gap: 1.1rem;
+}
+
+.container-community h1 {
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: hsl(179, 62%, 43%);
+}
+
+.container-community p {
+    font-size: 1.13rem;
+    color: hsl(204, 6%, 65%);
+}
+
+.container-community .garantia {
+    color: hsl(71, 73%, 54%);
+    font-weight: bolder;
+}
+
+main .container-subscription {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container-subscription .subscription {
+    padding: 3rem;
+    background: hsl(179, 62%, 43%);
+    display: grid;
+    gap: 1.2rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.subscription h2 {
+    font-size: 1.2rem;
+    color: hsl(204, 20%, 90%);
+}
+
+.subscription .container-price {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;    
+}
+
+.subscription .container-price .price {
+    font-size: 2.6rem;
+    color: white;
+}
+
+.container-price .text-price {
+    color: hsl(201, 14%, 80%);
+    font-size: 1.1rem;
+}
+
+.subscription p {
+    font-size: 1rem;
+    color: white;
+}
+
+.subscription a {
+    padding: 0.9rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background: hsl(71, 73%, 54%);
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color: white;
+    box-shadow: 1px 1px 20px -10px black;
+}
+
+.container-subscription .text {
+    padding: 3rem;
+    background: hwb(179 14% 20%);
+    border-bottom-right-radius: 1rem;
+}
+
+.text h2 {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.text p {
+    color: rgb(223, 213, 213);
+    line-height: 1.3rem;
+    font-size: 1rem;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}
