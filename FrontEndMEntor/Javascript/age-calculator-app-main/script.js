@@ -88,7 +88,6 @@ function calculoIdade() {
         idade -= 1;
     };
     if (Number(day.value) == dataAtual.getDate() && Number(month.value) == (dataAtual.getMonth() + 1)) {
-        idade += 1;
         dias = 0;
         meses = 0;
     };
