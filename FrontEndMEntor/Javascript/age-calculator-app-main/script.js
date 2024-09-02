@@ -1,6 +1,6 @@
 let showYear = document.querySelector(".show-years");
 let showMonth = document.querySelector(".show-month");
-let showDay = document.querySelector(".show-days");;
+let showDay = document.querySelector(".show-days");
 const day = document.querySelector("#day");
 const month = document.querySelector("#month");
 const year = document.querySelector("#year");
@@ -10,91 +10,100 @@ const label = document.querySelectorAll("label");
 
 const button = document.querySelector(".button");
 
-let diasMeses = [30, 28, 30, 31, 30, 31, 30, 30, 31, 30, 31, 30];
+let diasMeses = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+const dataAtual = new Date();
 
-function pegarDados() {
-    day, month, year.addEventListener('change', () => {}) 
-};
+function inputUser() {
+    day.addEventListener('change', () => { });
+    month.addEventListener('change', () => { });
+    year.addEventListener('change', () => { });
+}
 
-function renderError() {
+function error() {
     input.forEach((item) => {
         if (item.value == '') {
             item.style.borderColor = 'red';
-            label.forEach((label) => {
-                if (label.getAttribute("for") == item.getAttribute("id")) {
-                    label.style.color = 'red';
-                }
-            });
-        } else if ((item.getAttribute("id") == "day" || item.getAttribute("id") == "month") && (item.value.length != 2)) {
-            item.style.borderColor = 'red';
-            label.forEach((label) => {
-                if (label.getAttribute("for") == item.getAttribute("id")) {
-                    label.style.color = 'red';
-                }
-            });
-        } else if (item.getAttribute("id") == "year" && (item.value.length != 4)) {
-            item.style.borderColor = 'red';
-            label.forEach((label) => {
-                if (label.getAttribute("for") == item.getAttribute("id")) {
-                    label.style.color = 'red';
-                }
-            });
-        } else {
-            item.style.borderColor = 'black';
-            label.forEach((label) => {
-                if (label.getAttribute("for") == item.getAttribute("id")) {
-                    label.style.color = 'black';
-                }
-            });
         }
-    });
-}
-
-function validaData() {
-    renderError();
-    
-    if (input[0].value.length == 2 && input[1].value.length == 2 && input[2].value.length == 4) { return true };
-}
-
-function buttonSubmit() {
-    button.addEventListener("click", function () {
-        if (validaData()) {
-            let dados = calculoIdade(day.value, month.value, year.value);
-            renderizacao(dados);
+        if (item.name == "day") {
+            if (item.value > diasMeses[month.value] || item.value < 1) {
+                item.style.borderColor = 'red';
+            }
+        }
+        if (item.name == "month") {
+            if (item.value > 12 || item.value < 1) {
+                item.style.borderColor = 'red';
+            }
+        }
+        if (item.name == "year") {
+            if (item.value > dataAtual.getFullYear()) {
+                item.style.borderColor = 'red';
+            }
         }
     })
 }
 
-function calculoIdade(day, month, year) {
-    const dataAtual = new Date();
-    let dias = (dataAtual.getDate()) - day;
-    let meses = (dataAtual.getMonth() + 1) - month;
-    let anos = dataAtual.getFullYear() - year;
-    if (meses < 0 || meses === 0) {
-        anos--;
-        meses += 12;
-    }
-
-    if (dias < 0 || dias === 0) {
-        meses--
-        dias += diasMeses[meses - 1]
-    }
-
-    return {
-        anos: anos,
-        meses: meses,
-        dias: dias,
-    }
-
+function submit() {
+    button.addEventListener('click', () => {
+        isBissexto();
+        error();
+        let dados = calculoIdade();
+        render(dados);
+    })
 }
 
-function renderizacao(dados) {
-    showYear.innerText = dados.anos;
+function isBissexto() {
+    let ano = String(year.value).split('');
+    ano = Number(ano[2] + ano[3]);
+    if (ano % 4 != 0) {
+        diasMeses[1] += 1;
+    } else {
+        diasMeses[1] = 28;
+    }
+}
+
+function render(dados) {
+    showYear.innerText = dados.idade;
     showMonth.innerText = dados.meses;
     showDay.innerText = dados.dias;
+
 }
 
-pegarDados();
-buttonSubmit();
+function calculoIdade() {
+    let idade = dataAtual.getFullYear() - Number(year.value);
+    let dias = 0;
+    let meses = 0;
+
+    for (let i = Number(month.value); i != Number(month.value) - 1; i++) {
+        dias += diasMeses[i];
+        meses += 1;
+        if (i == 11) {
+            i = -1;
+        }
+        if (i == Number(month.value) - 2) {
+            dias += (diasMeses[i + 2] - Number(day.value));
+        }
+    }
+
+    if (Number(month.value) > (dataAtual.getMonth() + 1) || (Number(month.value) == (dataAtual.getMonth() + 1) && Number(day.value) > dataAtual.getDate())) {
+        idade -= 1;
+    };
+    if (Number(day.value) == dataAtual.getDate() && Number(month.value) == (dataAtual.getMonth() + 1)) {
+        idade += 1;
+        dias = 0;
+        meses = 0;
+    };
+    return {
+        idade: idade,
+        dias: dias,
+        meses: meses,
+    }
+}
+
+inputUser();
+submit();
+
+
+
+
 
 
