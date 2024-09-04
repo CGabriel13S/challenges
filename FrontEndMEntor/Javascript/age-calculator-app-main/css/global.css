@@ -46,3 +46,16 @@ img {
     display: block;
 }
 
+@media (max-width: 800px) {
+    input {
+        margin: 0 0.5rem;
+        width: 28px;
+        height: 12px;
+        font-size: 0.90rem;
+    }
+
+    img {
+        width: 25%;
+    }
+}
+

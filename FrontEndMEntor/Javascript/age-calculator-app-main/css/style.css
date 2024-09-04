@@ -16,7 +16,7 @@ main .data .button {
 }
 
 .button img {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     padding: 1rem;
     border-radius: 50%;
     background-color: hsl(259, 100%, 65%);
@@ -28,7 +28,7 @@ main .data .button {
     width: 100%;
     background-color: rgb(206, 193, 193);
     position: absolute;
-    bottom: 35px;
+    bottom: 28px;
 }
 
 main .calculo {
@@ -43,4 +43,20 @@ main .calculo {
 
 footer {
     text-align: center;
+}
+
+@media (max-width: 800px) {
+    main {
+        padding: 2rem 2rem;
+        width: 250px;
+        border-bottom-right-radius: 6rem;
+    }
+
+    main .data {
+        font-size: 0.7rem;
+    }
+
+    main .calculo {
+        font-size: 2.7rem;
+    }
 }
