@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    font-family: "Plus Jakarta Sans";
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: hsl(210, 60%, 98%);
+}
+
+img {
+    width: 50px;
+    display: block;
+}
+
+main {
+    padding-top: 30px;
+    border-radius: 16px;
+    background: white;
+}
+
+main .cabecalho {
+    padding: 0 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    font-size: 30px;
+}
+
+.cabecalho .qtd-msg {
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background: hsl(246, 94%, 27%);
+}
+
+.cabecalho button {
+    background: none;
+    font-weight: bold;
+    color: rgb(107, 103, 103);
+    cursor: pointer;
+}
+
+main ul {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main ul li {
+    padding: 16px;
+    border-radius: 10px;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.no-read {
+    background: hsl(210, 60%, 98%);
+}
+
+.bolinha {
+    position: relative;
+}
+
+.bolinha::after {
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: orange;
+    top: 40%;
+    left: 103%;
+    display: block;
+    position: absolute;
+}
+
+.read {
+    display: flex;
+}
+
+.container-msg-notification {
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.name {
+    font-weight: bolder;
+    color: black;
+    cursor: pointer;
+}
+
+.time {
+    color: rgb(119, 113, 113);
+}
+
+.container-comment {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.comment {
+    display: flex;
+    gap: 16px;
+}
+
+.name-group {
+    font-weight: bold;
+    color: rgb(8, 8, 160);
+    cursor: pointer;
+}
+
+.name-post {
+    font-weight: bold;
+    color: rgb(100, 96, 96);
+    cursor: pointer;
+}
+
+.message-private {
+    margin: 10px 0;
+    padding: 15px;
+    max-width: 46ch;
+    font-weight: bold;
+    color: rgb(119, 113, 113);
+    box-shadow: 0px 0px 2px 1px rgb(214, 210, 210);
+    cursor: pointer;
+}
+
+.message-private:hover {
+    background: rgb(187, 187, 241);
+}
+
+.hover:hover{
+    color: rgb(6, 6, 124);
+}
