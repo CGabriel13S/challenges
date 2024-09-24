@@ -41,12 +41,16 @@ header nav > ul {
     color: white;
 }
 
-header nav > ul > li {
+header nav ul li {
     padding: 10px;
     background: rgb(140, 56, 219);
     border-radius: 5px;
     cursor: pointer;
-} 
+}
+
+header nav ul li:hover {
+    background: rgb(77, 18, 133);
+}
 
 .sidenav {
     padding-top: 20px;
@@ -62,6 +66,11 @@ header nav > ul > li {
     width: 110px;
     background: white;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.sidenav img:hover {
+    background: rgb(160, 88, 228);
 }
 
 main {
@@ -71,7 +80,7 @@ main {
 }
 
 main .titulo h1 {
-    font-size: 60px;
+    font-size: 70px;
     color: blueviolet;
 }
 
@@ -97,6 +106,7 @@ main .infos-animal {
 .infos-pessoal .number {
     padding: 15px 20px;
     font-size: 35px;
+    font-weight: bold;
     color: rgb(196, 188, 188);
     opacity: 0.5;
 }
@@ -148,6 +158,58 @@ main .container-lobo1e2 {
     grid-row: 2;
 }
 
+main .paragrafo3, .paragrafo4 {
+    max-width: 25ch;
+    font-size: 22px;
+    line-height: 28px;
+}
+
+main .paragrafo5 {
+    padding: 50px;
+    margin: 30px 0;
+    grid-column: span 2;
+    border-radius: 10px;
+    background: blueviolet;
+    font-size: 25px;
+    color: white;
+}
+
+main .dados-animal {
+    padding: 40px;
+    margin: 5px;
+    margin-right: 40px;
+    background: blueviolet;
+    display: grid;
+    grid-row: span 2;
+    gap: 30px;
+    border-radius: 10px;
+    font-size: 23px;
+    color: white;
+}
+
+.dados-animal li::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: rgb(163, 162, 162);
+    display: block;
+    position: relative;
+    top: 15px;
+}
+
+main .paragrafo7, .paragrafo6 {
+    font-size: 20px;
+    line-height: 28px;
+    grid-column: 2;
+}
+
+main .wolf3 {
+    margin: 30px 0;
+    width: 100%;
+    grid-column: span 2;
+    border-radius: 10px;
+}
+
 .advert {
     padding-top: 50px;
     background: rgb(248, 245, 245);
@@ -160,4 +222,14 @@ main .container-lobo1e2 {
 .advert img {
     width: 250px;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+footer {
+    padding: 40px;
+    grid-area: footer;
+    background: blueviolet;
+    text-align: center;
+    font-size: 20px;
+    color: white;
 }
