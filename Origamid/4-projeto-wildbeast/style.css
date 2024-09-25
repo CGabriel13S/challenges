@@ -74,12 +74,24 @@ header nav ul li:hover {
 }
 
 main {
-    padding: 30px;
+    padding: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "titulo kg-age"
+        "paragrafo1 paragrafo1"
+        "wolf1 paragrafo2" 
+        "wolf1 wolf2"
+        "paragrafo3 paragrafo4"
+        "paragrafo5 paragrafo5"
+        "dados-animal paragrafo6"
+        "dados-animal paragrafo7"
+        "wolf3 wolf3"
+    ;
+    justify-items: center;
 }
 
 main .titulo h1 {
+    grid-area: titulo;
     font-size: 70px;
     color: blueviolet;
 }
@@ -90,6 +102,7 @@ main .titulo h1 {
 
 main .infos-animal {
     display: grid;
+    grid-area: kg-age;
     grid-template-columns: 80px 80px;
     gap: 50px;
     align-self: center;
@@ -126,36 +139,26 @@ main p {
 main .paragrafo1 {
     margin: 50px 0;
     line-height: 30px;
-    grid-column: span 2;
+    grid-area: paragrafo1;
 }
 
-main .container-lobo1e2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column: span 2;
-}
-
-.container-lobo1e2 img {
+main .wolf1 {
+    grid-area: wolf1;
     border-radius: 10px;
 }
 
-.container-lobo1e2 .paragrafo2 {
+main .paragrafo2 {
     padding-bottom: 20px;
     max-width: 30ch;
-    grid-column: 2;
-    grid-row: 1;
+    grid-area: paragrafo2;
     line-height: 22px;
     font-size: 15px;
     color: blueviolet;
 }
 
-.container-lobo1e2 .wolf1 {
-    grid-row: span 2;
-}
-
-.container-lobo1e2 .wolf2 {
-    grid-column: 2;
-    grid-row: 2;
+main .wolf2 {
+    grid-area: wolf2;
+    border-radius: 10px;
 }
 
 main .paragrafo3, .paragrafo4 {
@@ -164,10 +167,18 @@ main .paragrafo3, .paragrafo4 {
     line-height: 28px;
 }
 
+main .paragrafo3 {
+    grid-area: paragrafo3;
+}
+
+main .paragrafo4 {
+    grid-area: paragrafo4;
+}
+
 main .paragrafo5 {
     padding: 50px;
     margin: 30px 0;
-    grid-column: span 2;
+    grid-area: paragrafo5;
     border-radius: 10px;
     background: blueviolet;
     font-size: 25px;
@@ -180,7 +191,7 @@ main .dados-animal {
     margin-right: 40px;
     background: blueviolet;
     display: grid;
-    grid-row: span 2;
+    grid-area: dados-animal;
     gap: 30px;
     border-radius: 10px;
     font-size: 23px;
@@ -197,16 +208,24 @@ main .dados-animal {
     top: 15px;
 }
 
-main .paragrafo7, .paragrafo6 {
+main .paragrafo6, .paragrafo7 {
     font-size: 20px;
     line-height: 28px;
     grid-column: 2;
 }
 
+main .paragrafo6 {
+    grid-area: paragrafo6;
+}
+
+main .paragrafo7 {
+    grid-area: paragrafo7;
+}
+
 main .wolf3 {
     margin: 30px 0;
     width: 100%;
-    grid-column: span 2;
+    grid-area: wolf3;
     border-radius: 10px;
 }
 
