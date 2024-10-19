@@ -10,50 +10,59 @@
 
 <body>
     <header>
-        <div>
-            <span>Seg / Sex - 08:00 às 18:00</span>
-            <span>+55 21 9999-9999</span>
-            <span>Av. Ali Perto, 330, Botafogo - RJ</span>
+        <div class="infos-contato">
+            <div class="infos-contato-text alinhamento">
+                <span>Seg / Sex - 08:00 às 18:00</span>
+                <span>+55 21 9999-9999</span>
+                <span>Av. Ali Perto, 330, Botafogo - RJ</span>
+            </div>
+
         </div>
-        <div>
-            <span>FlexBlog</span>
-            <ul>
-                <li>Sobre</li>
-                <li>Produtos</li>
-                <li>Preço</li>
-                <li>Qualidade</li>
-            </ul>
+        <div class="header">
+            <div class="header-text alinhamento">
+                <span class="marca">FlexBlog</span>
+                <ul>
+                    <li>Sobre</li>
+                    <li>Produtos</li>
+                    <li>Preço</li>
+                    <li>Qualidade</li>
+                </ul>
+            </div>
+
         </div>
     </header>
-    <main>
-        <h1>Novos Valores e Propriedades de CSS</h1>
-        <section>
-            <div>
+    <main class="alinhamento">
+        <h1>Novos Valores e<br>Propriedades de CSS</h1>
+        <section class="sobre">
+            <div class="text-sobre">
                 <h2>Sobre</h2>
                 <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a
                     correta previsão das condições inegavelmente apropriadas objetivos.</p>
                 <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a
                     correta previsão das condições inegavelmente apropriadas objetivos.</p>
             </div>
-            <div>
+            <div class="img-sobre">
                 <img src="/flexblog/img/sobre1.jpg" alt="">
                 <img src="/flexblog/img/sobre2.jpg" alt="">
             </div>
         </section>
-        <section>
+        <section class="produtos">
             <h2>Produtos</h2>
-            <div>
-                <span>Purple</span>
-                <img src="/flexblog/img/produtos1.jpg" alt="">
+            <div class="produtos-list">
+                <div class="produto-ind purple">
+                    <span>Purple</span>
+                    <img src="/flexblog/img/produtos1.jpg" alt="">
+                </div>
+                <div class="produto-ind pink">
+                    <span>Pink</span>
+                    <img src="/flexblog/img/produtos2.jpg" alt="">
+                </div>
+                <div class="produto-ind blue">
+                    <span>Blue</span>
+                    <img src="/flexblog/img/produtos3.jpg" alt="">
+                </div>
             </div>
-            <div>
-                <span>Ping</span>
-                <img src="/flexblog/img/produtos2.jpg" alt="">
-            </div>
-            <div>
-                <span>Blue</span>
-                <img src="/flexblog/img/produtos3.jpg" alt="">
-            </div>
+
         </section>
         <section>
             <div>
@@ -96,27 +105,44 @@
         <section>
             <dl>
                 <dt>Inteligente</dt>
-                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</dd>
+                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a
+                    correta previsão</dd>
 
                 <dt>Compacto</dt>
-                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</dd>
+                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a
+                    correta previsão das condições inegavelmente</dd>
 
                 <dt>Econômico</dt>
-                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</dd>
+                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a
+                    correta previsão</dd>
 
                 <dt>Transparente</dt>
-                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</dd>
+                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a
+                    correta previsão</dd>
 
                 <dt>Opaco</dt>
-                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</dd>
+                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a
+                    correta previsão das condições inegavelmente</dd>
 
                 <dt>Sustentável</dt>
-                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</dd>
+                <dd>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a
+                    correta previsão</dd>
             </dl>
         </section>
         <section>
-            
+            <div>
+                <h2>Newsletter</h2>
+                <p>assine e fique por dentro</p>
+            </div>
+            <form action="./">
+                <input type="text">
+                <button>assinar</button>
+            </form>
         </section>
     </main>
+    <footer>
+        <p>FlexBlog © Todos os direitos reservados.</p>
+    </footer>
 </body>
+
 </html>

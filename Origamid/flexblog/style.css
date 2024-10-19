@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.alinhamento {
+    width: 100%;
+    max-width: 960px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+}
+
+header .infos-contato {
+    padding: 20px 10px;
+    background: rgb(4, 4, 167);
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.infos-contato .infos-contato-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header {
+    padding: 25px 20px;
+    background: rgba(55, 0, 255, 0.842);
+    font-size: 1.4rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.header .header-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text .marca {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.header-text > ul {
+    display: flex;
+    gap: 20px;
+    font-size: 19px;
+}
+
+.header-text > ul li {
+    cursor: pointer;
+}
+
+main h1 {
+    margin: 40px 0;
+    font-size: 2.9rem;
+    position: relative;
+}
+
+main h1::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    bottom: -65px;
+    background: blue;
+    position: absolute;
+}
+
+main .sobre {
+    margin: 130px 0;
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+
+main .sobre::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    bottom: -65px;
+    background: blue;
+    position: absolute;
+}
+
+.sobre .text-sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-sobre h2{
+    font-size: 2.9rem;
+}
+
+.text-sobre p {
+    max-width: 40ch;
+    font-size: 1.35rem;
+    color: rgb(116, 113, 113);
+}
+
+.sobre .img-sobre {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+main .produtos h2 {
+    margin-bottom: 90px ;
+    font-size: 2.9rem;
+}
+
+.produtos .produtos-list {
+    display: flex;
+    align-items: flex-end;
+    gap: 25px;
+}
+
+.produto-ind > span {
+    padding-left: 20px;
+    height: 190px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(180, 174, 174);
+    background: rgba(230, 226, 226, 0.445);
+    display: flex;
+    align-items: center;
+}
+
+.produtos-list .purple {
+    box-shadow: 0px -10px 0px 0px rgb(184, 3, 184);
+}
+
+.produtos-list .pink {
+    box-shadow: 0px -10px 0px 0px rgb(235, 31, 65);
+}
+
+.produtos-list .blue {
+    box-shadow: 0px -10px 0px 0px rgb(135, 135, 233);
+}
