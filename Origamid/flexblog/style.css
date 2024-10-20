@@ -20,14 +20,9 @@ img {
 }
 
 .alinhamento {
+    margin: 0 auto;
     width: 100%;
     max-width: 960px;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 header {
@@ -78,13 +73,13 @@ header .header {
     cursor: pointer;
 }
 
-main h1 {
+main .inicio h1 {
     margin: 40px 0;
     font-size: 2.9rem;
     position: relative;
 }
 
-main h1::after {
+.inicio h1::after {
     content: "";
     display: block;
     height: 2px;
@@ -94,14 +89,14 @@ main h1::after {
     position: absolute;
 }
 
-main .sobre {
+main .inicio .sobre {
     margin: 130px 0;
     display: flex;
     gap: 50px;
     position: relative;
 }
 
-main .sobre::after {
+.inicio .sobre::after {
     content: "";
     display: block;
     height: 2px;
@@ -165,4 +160,102 @@ main .produtos h2 {
 
 .produtos-list .blue {
     box-shadow: 0px -10px 0px 0px rgb(135, 135, 233);
+}
+
+main .compra {
+    margin: 50px 0;
+    padding: 40px 60px;
+    background: rgba(223, 219, 219, 0.233);
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.container-compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    box-shadow: 0px 0px 0px 4px white;
+}
+
+.container-compra .compra-content {
+    padding: 40px 0;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.compra-content h3 {
+    font-size: 3.2rem;
+    text-align: center;
+    color: rgb(139, 131, 131);
+}
+
+.compra-content .valor {
+    font-size: 3rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    position: relative;
+}
+
+.valor::after {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: white;
+    top: -20px;
+    position: absolute;
+}
+
+.valor::before {
+    content: "";
+    height: 4px;
+    width: 100%;
+    background: white;
+    bottom: -20px;
+    position: absolute;
+}
+
+.compra-content .moeda {
+    padding-top: 4px;
+    font-size: 1.3rem;
+}
+
+.compra-content > ul {
+    margin: 20px 0;
+    color: rgb(128, 122, 122);
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.compra-content > ul li {
+    position: relative
+}
+
+.compra-content > ul li::after {
+    content: "";
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: blue;
+    display: block;
+    top: 10px;
+    right: 1px;
+    position: absolute;
+}
+
+.compra-content button {
+    padding: 10px;
+    box-shadow: 0px 0px 0px 4px black;
+    font-size: 3rem;
+    cursor: pointer;
 }
