@@ -25,6 +25,12 @@ img {
     max-width: 960px;
 }
 
+@media (max-width: 1000px) {
+    main {
+        padding: 0 20px;
+    }
+}
+
 header {
     width: 100%;
 }
@@ -92,6 +98,8 @@ main .inicio h1 {
 main .inicio .sobre {
     margin: 130px 0;
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 50px;
     position: relative;
 }
@@ -110,6 +118,8 @@ main .inicio .sobre {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex-basis: 300px;
+    flex-grow: 1;
 }
 
 .text-sobre h2{
@@ -117,15 +127,8 @@ main .inicio .sobre {
 }
 
 .text-sobre p {
-    max-width: 40ch;
-    font-size: 1.35rem;
+    font-size: 1.3rem;
     color: rgb(116, 113, 113);
-}
-
-.sobre .img-sobre {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
 }
 
 main .produtos h2 {
@@ -259,3 +262,163 @@ main .compra {
     font-size: 3rem;
     cursor: pointer;
 }
+
+main .caracteristicas > dl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.5rem;
+}
+
+dl dt {
+    font-size: 2rem;
+    color: rgb(133, 124, 124);
+    font-weight: bold;
+    position: relative;
+}
+
+dl dd {
+    margin-top: 30px;
+    max-width: 24ch;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.699);
+}
+
+dl .inteligente::before {
+    content: "";
+    height: 30px;
+    width: 8px;
+    background: rgb(226, 39, 226);
+    top: 4px;
+    left: -17px;
+    position: absolute;
+}
+
+dl .compacto::before {
+    content: "";
+    height: 30px;
+    width: 8px;
+    background: red;
+    top: 4px;
+    left: -17px;
+    position: absolute;
+}
+
+dl .economico::before {
+    content: "";
+    height: 30px;
+    width: 8px;
+    background: rgb(70, 199, 231);
+    top: 4px;
+    left: -17px;
+    position: absolute;
+}
+
+dl .transparente::before {
+    content: "";
+    height: 30px;
+    width: 8px;
+    background: rgb(226, 39, 226);
+    top: 4px;
+    left: -17px;
+    position: absolute;
+}
+
+dl .opaco::before {
+    content: "";
+    height: 30px;
+    width: 8px;
+    background: red;
+    top: 4px;
+    left: -17px;
+    position: absolute;
+}
+
+dl .sustentavel::before {
+    content: "";
+    height: 30px;
+    width: 8px;
+    background: rgb(70, 199, 231);
+    top: 4px;
+    left: -17px;
+    position: absolute;
+}
+
+main .newsletter {
+    margin-top: 70px;
+    background: rgba(223, 219, 219, 0.233);
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter .newsletter-container {
+    padding: 50px 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter .newsletter-text{
+    color: rgb(133, 124, 124);
+}
+
+.newsletter-text h2 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+}
+
+.newsletter-text p {
+    font-size: 1.3rem;
+}
+
+.newsletter button {
+    padding: 20px 40px;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 0px 4px blue;
+    background: blue;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter form input {
+    padding-left: 10px;
+    width: 200px;
+    font-size: 1rem;
+    color: rgb(133, 124, 124);
+    background: white;
+    border: none;
+    box-shadow: 0px 0px 0px 4px blue;
+}
+
+@media (max-width: 1400px) {
+    .newsletter-container {
+        gap: 100px;
+    } 
+
+    form input {
+        height: 60px;
+    }
+    .newsletter-container form button{
+        width: 210px;
+        height: 20px;
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+footer {
+    padding: 50px;
+    background: blue;
+    text-align: center;
+    color: rgb(12, 14, 141);
+    font-size: 2rem;
+} 
