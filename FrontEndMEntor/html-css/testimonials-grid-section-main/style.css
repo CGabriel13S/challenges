@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center center;
+    background: hsl(210, 46%, 95%);
+}
+
+main {
+    max-width: 1440px;
+    display: grid;
+    grid-template-areas: 
+    "apresentacao1 apresentacao1 apresentacao2 apresentacao3"
+    "apresentacao4 apresentacao5 apresentacao5 apresentacao3"
+    ;
+    gap: 30px;
+}
+
+.user-daniel {
+    grid-area: apresentacao1;
+    background: hsl(263, 55%, 52%);
+}
+
+.user-jonathan {
+    grid-area: apresentacao2;
+    background: hsl(217, 19%, 35%);
+}
+
+.user-kira {
+    grid-area: apresentacao3;
+    background: white;
+}
+
+.user-jeanette {
+    grid-area: apresentacao4;
+    background: white;
+}
+
+.user-patrick {
+    grid-area: apresentacao5;
+    background: hsl(219, 29%, 14%);
+}
