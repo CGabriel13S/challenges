@@ -9,7 +9,7 @@ img {
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     place-content: center center;
     background: hsl(210, 46%, 95%);
@@ -18,11 +18,92 @@ body {
 main {
     max-width: 1440px;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "apresentacao1 apresentacao1 apresentacao2 apresentacao3"
     "apresentacao4 apresentacao5 apresentacao5 apresentacao3"
     ;
     gap: 30px;
+}
+
+@media (max-width: 1000px) {
+    main {
+        margin: 40px 30px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "apresentacao1 apresentacao2"
+        "apresentacao3 apresentacao4"
+        "apresentacao5 apresentacao5"
+        ;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        margin: 40px 30px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "apresentacao1"
+        "apresentacao2"
+        "apresentacao3"
+        "apresentacao4"
+        "apresentacao5"
+        ;
+    }
+}
+
+.user-container {
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.user-container p {
+    color: white;
+    opacity: 0.5;
+    font-size: 17px;
+}
+
+.user-container .titulo {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+
+.user > img {
+    border-radius: 50%;
+}
+
+.user > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.user .name {
+    font-weight: bold;
+    opacity: 1;
+}
+
+.user span {
+    opacity: 0.7;
+}
+
+.user .name-black {
+    color: black;
+    font-weight: bold;
+    opacity: 0.5;
 }
 
 .user-daniel {
@@ -38,6 +119,16 @@ main {
 .user-kira {
     grid-area: apresentacao3;
     background: white;
+}
+
+.user-kira p, .user-kira span, .user-jeanette p, .user-jeanette span {
+    color: black;
+    opacity: 0.5;
+}
+
+.user-kira .titulo, .user-jeanette .titulo {
+    color: black;
+    opacity: 0.7;
 }
 
 .user-jeanette {
