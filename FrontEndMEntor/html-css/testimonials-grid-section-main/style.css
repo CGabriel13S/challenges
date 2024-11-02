@@ -32,8 +32,8 @@ main {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "apresentacao1 apresentacao2"
-        "apresentacao3 apresentacao4"
-        "apresentacao5 apresentacao5"
+        "apresentacao5 apresentacao4"
+        "apresentacao3 apresentacao3"
         ;
     }
 }
@@ -45,9 +45,9 @@ main {
         grid-template-areas: 
         "apresentacao1"
         "apresentacao2"
-        "apresentacao3"
         "apresentacao4"
         "apresentacao5"
+        "apresentacao3"
         ;
     }
 }
